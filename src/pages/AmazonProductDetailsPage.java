@@ -15,9 +15,9 @@ public class AmazonProductDetailsPage extends BasePage {
 	    PageFactory.initElements(driver, this);
     }
 
-	public boolean checkIfProductTitleContainsText(String titletext) {
+	public boolean checkIfProductTitleContainsText(String text) {
 		String productTitleText = productTitle.getText();
-		return productTitleText.contains(titletext);
+		return productTitleText.contains(text);
 	}
 
 }
