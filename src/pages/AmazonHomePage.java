@@ -15,8 +15,8 @@ public class AmazonHomePage extends BasePage {
 	    PageFactory.initElements(driver, this);
     }
 	
-	public void searchWithText(String searchtext) {
-		searchField.sendKeys(searchtext);
+	public void searchWithText(String text) {
+		searchField.sendKeys(text);
 		searchField.submit();
 	}
 

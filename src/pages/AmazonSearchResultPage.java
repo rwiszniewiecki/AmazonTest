@@ -11,7 +11,7 @@ public class AmazonSearchResultPage extends BasePage {
 	WebElement sortField;
 
 	@FindBy(id = "s-result-sort-select_2")
-	WebElement sortHightoLow;
+	WebElement sortHighToLow;
 
 	@FindBy(xpath = "//*[@data-index='2']//*[@class='a-price']")
 	WebElement secondProduct;
@@ -23,7 +23,7 @@ public class AmazonSearchResultPage extends BasePage {
 
 	public void sortResultsFromHighToLow() {
 		sortField.click();
-		sortHightoLow.click();
+		sortHighToLow.click();
 	}
 
 	public void selectSecondProduct() {
